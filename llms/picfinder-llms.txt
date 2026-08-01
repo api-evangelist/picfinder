@@ -1,0 +1,32 @@
+# PicFinder
+
+> PicFinder (PicFinder.ai) is an AI-powered image generation platform that turns text prompts into unlimited images in near real time. It exposes a developer API for programmatic image inference — powered by the RunWare / DiffusionMaster platform — delivered over an API-key-authenticated WebSocket connection, with a first-party JavaScript/TypeScript SDK (picfinder-sdk).
+
+## API
+
+- [PicFinder Image Inference API (docs)](https://picfinder.ai/support/en/collections/7944924-picfinder-api): WebSocket API for text-to-image / image-to-image generation, model & LoRA selection, ControlNet, inpaint/outpaint, background removal, GAN upscaling, image-to-text, prompt enhancement, and similar-image retrieval. Endpoint: wss://ws-api.diffusionmaster.com
+
+## SDK
+
+- [picfinder-sdk on npm](https://www.npmjs.com/package/picfinder-sdk): Official JavaScript/TypeScript SDK for browser (Picfinder) and Node.js (PicfinderServer). `npm install picfinder-sdk`
+
+## Docs
+
+- [PicFinder Support / Knowledge Base](https://picfinder.ai/support)
+- [About PicFinder](https://picfinder.ai/about-us)
+
+## Artifacts (API Evangelist)
+
+- [Packages / SDKs](packages/picfinder-packages.yml)
+- [Authentication profile](authentication/picfinder-authentication.yml)
+- [API conventions](conventions/picfinder-conventions.yml)
+- [MCP server (candidate)](mcp/picfinder-mcp.yml)
+- [Well-known probe](well-known/picfinder-well-known.yml)
+- [Domain security probe](security/picfinder-domain-security.yml)
+
+## Account
+
+- [Sign up](https://picfinder.ai/sign-up-account-details)
+- [Sign in](https://picfinder.ai/sign-in)
+- [Terms & Conditions](https://picfinder.ai/terms-and-conditions)
+- [Privacy Policy](https://picfinder.ai/privacy-policy)

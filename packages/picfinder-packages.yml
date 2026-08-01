@@ -1,0 +1,23 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.npmjs.com/package/picfinder-sdk
+packages:
+- language: javascript
+  registry: npm
+  name: picfinder-sdk
+  url: https://www.npmjs.com/package/picfinder-sdk
+  install: npm install picfinder-sdk
+  official: true
+  version: 1.0.27
+  description: >-
+    Official PicFinder JavaScript / TypeScript SDK. Wraps the PicFinder image
+    inference WebSocket API (powered by the RunWare / DiffusionMaster platform)
+    for both browser (Picfinder) and Node.js (PicfinderServer) environments.
+    Supports text-to-image and image-to-image generation, model / LoRA and
+    CivitAI model selection, ControlNet, inpainting / outpainting, background
+    removal, GAN upscaling, image-to-text, prompt enhancement, and
+    similar-image retrieval.
+  runtime_dependencies:
+  - ws
+  - uuid
+  - bufferutil

@@ -1,7 +1,19 @@
 aid: picfinder
 name: PicFinder
-description: PicFinder is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  PicFinder (PicFinder.ai) is an AI-powered image generation platform that turns
+  text prompts into unlimited realistic, artistic, and abstract images in near
+  real time. Beyond the consumer web app and Figma plugin, PicFinder exposes a
+  developer API for programmatic image inference powered by the RunWare /
+  DiffusionMaster inference platform. The API is delivered over a WebSocket
+  connection and authenticated with an API key, and supports text-to-image and
+  image-to-image generation, model and LoRA selection (including CivitAI models),
+  ControlNet guidance, inpainting and outpainting, background removal, GAN
+  upscaling, image-to-text interrogation, prompt enhancement, and similar-image
+  retrieval. A first-party JavaScript / TypeScript SDK (picfinder-sdk) wraps the
+  WebSocket protocol for both browser and Node.js environments. PicFinder was
+  surfaced as an a16z portfolio company and profiled into the API Evangelist
+  network.
 url: https://raw.githubusercontent.com/api-evangelist/picfinder/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +21,92 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Artificial Intelligence
+- Machine Learning
+- Image Generation
+- Generative AI
+- Text to Image
+- Image to Image
+- Developer Tools
+- SDK
+- WebSocket
+image: https://picfinder.ai/favicon.ico
+apis:
+- name: PicFinder Image Inference API
+  description: >-
+    WebSocket API for AI image inference powered by the RunWare / DiffusionMaster
+    platform. Supports text-to-image and image-to-image generation, model / LoRA
+    selection, ControlNet, inpainting, outpainting, background removal, GAN
+    upscaling, image-to-text, prompt enhancement, and similar-image retrieval.
+    Authenticated with an API key over a persistent WebSocket connection.
+  humanURL: https://picfinder.ai/support/en/collections/7944924-picfinder-api
+  baseURL: wss://ws-api.diffusionmaster.com
+  properties:
+  - type: SDK
+    url: https://www.npmjs.com/package/picfinder-sdk
+  - type: Authentication
+    url: authentication/picfinder-authentication.yml
+  - type: Conventions
+    url: conventions/picfinder-conventions.yml
+  - type: MCPServer
+    url: mcp/picfinder-mcp.yml
+common:
+- type: DeveloperPortal
+  url: https://picfinder.ai/support
+- type: Documentation
+  url: https://picfinder.ai/support
+- type: APIReference
+  url: https://www.npmjs.com/package/picfinder-sdk
+- type: SignUp
+  url: https://picfinder.ai/sign-up-account-details
+- type: Login
+  url: https://picfinder.ai/sign-in
+- type: TermsOfService
+  url: https://picfinder.ai/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://picfinder.ai/privacy-policy
+- type: Support
+  url: https://picfinder.ai/support
+- type: Packages
+  url: packages/picfinder-packages.yml
+- type: SDKs
+  url: packages/picfinder-packages.yml
+- type: Authentication
+  url: authentication/picfinder-authentication.yml
+- type: Conventions
+  url: conventions/picfinder-conventions.yml
+- type: MCPServer
+  url: mcp/picfinder-mcp.yml
+- type: WellKnown
+  url: well-known/picfinder-well-known.yml
+- type: DomainSecurity
+  url: security/picfinder-domain-security.yml
+- type: LLMsTxt
+  url: llms/picfinder-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 7
+  pass: local-v1

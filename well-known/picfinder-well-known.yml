@@ -1,0 +1,32 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of picfinder.ai + ws-api.diffusionmaster.com
+note: >-
+  No machine-readable discovery documents were found. picfinder.ai is a
+  Cloudflare-fronted single-page app that returns the app shell (soft-404) for
+  unknown paths and 403 to non-browser clients; ws-api.diffusionmaster.com is a
+  WebSocket-only endpoint. No security.txt, OIDC/OAuth metadata, api-catalog, or
+  ai-plugin.json is published.
+hosts:
+- host: https://picfinder.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+- host: https://ws-api.diffusionmaster.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null

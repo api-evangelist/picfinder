@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.npmjs.com/package/picfinder-sdk
+docs: https://picfinder.ai/support/en/collections/7944924-picfinder-api
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - message-body
+  transport: websocket
+  notes: >-
+    The PicFinder API is a persistent WebSocket connection to
+    wss://ws-api.diffusionmaster.com. The client obtains an API key by
+    requesting API access through the PicFinder support portal, then supplies
+    the key (plus an ENVIRONMENT of PRODUCTION or DEVELOPMENT) when
+    instantiating the SDK. The SDK opens the WebSocket and authenticates the
+    session with the API key over the connection; there is no OAuth or scope
+    surface. No published OpenAPI/Swagger document exists — the protocol is
+    documented via the first-party picfinder-sdk.
+schemes:
+- name: apiKey
+  type: apiKey
+  in: message-body
+  environment_param: ENVIRONMENT
+  environments:
+  - PRODUCTION
+  - DEVELOPMENT
+  sources:
+  - https://www.npmjs.com/package/picfinder-sdk

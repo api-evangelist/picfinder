@@ -1,0 +1,50 @@
+generated: '2026-07-20'
+method: derived
+source: https://www.npmjs.com/package/picfinder-sdk
+summary: >-
+  Cross-cutting request/response semantics for the PicFinder image inference
+  API, derived from the first-party picfinder-sdk (v1.0.27). The API is a
+  persistent WebSocket protocol rather than a request/response REST API, so many
+  REST conventions (offset/cursor pagination, HTTP status envelopes, idempotency
+  keys) do not apply; work is modeled as asynchronous tasks correlated by UUID.
+transport:
+  protocol: websocket
+  production_url: wss://ws-api.diffusionmaster.com
+  development_url: wss://dev-ws-api.diffusionmaster.com
+  connection: persistent, established via SDK connect(); requests multiplexed over one socket
+authentication:
+  style: api-key
+  detail: see authentication/picfinder-authentication.yml
+async_model:
+  description: >-
+    Each generation request is a task. The client may receive partial results as
+    they are produced via an onPartialImages callback, or await the resolved
+    promise for the full result set. Tasks and images are correlated by UUID.
+  correlation_fields:
+  - taskUUID
+  - imageUUID
+caching:
+  supported: true
+  field: useCache
+  detail: When useCache is true, previously generated matching images may be returned for faster response.
+idempotency:
+  supported: false
+  detail: No idempotency-key header/parameter is documented; repeated requests generate new tasks/images.
+pagination:
+  supported: false
+  detail: Not applicable — generation returns a bounded numberOfImages set, not a paged collection.
+content_flags:
+  nsfw: bNSFWContent boolean returned per image indicating NSFW-detected content.
+error_handling:
+  style: exception
+  detail: >-
+    Errors surface via the catch block of each SDK request (rejected promise) and
+    via an IError object passed to callbacks; there is no RFC 9457 problem+json
+    HTTP envelope because the transport is WebSocket.
+versioning:
+  scheme: sdk-package-semver
+  detail: The client surface is versioned through the picfinder-sdk npm package (semver); no dated API version header is documented.
+cross_links:
+  authentication: authentication/picfinder-authentication.yml
+  packages: packages/picfinder-packages.yml
+  mcp: mcp/picfinder-mcp.yml
