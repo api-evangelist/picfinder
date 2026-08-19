@@ -2,18 +2,17 @@ generated: '2026-07-20'
 method: derived
 status: candidate
 source: https://www.npmjs.com/package/picfinder-sdk
-note: >-
-  No official hosted/remote PicFinder MCP server was found. This is a CANDIDATE
-  tool list derived from the public operation surface of the first-party
-  picfinder-sdk (v1.0.27). PicFinder exposes a WebSocket protocol (no OpenAPI),
-  so tools map to SDK methods rather than REST operationIds.
+note: No official hosted/remote PicFinder MCP server was found. This is a CANDIDATE tool list derived
+  from the public operation surface of the first-party picfinder-sdk (v1.0.27). PicFinder exposes a WebSocket
+  protocol (no OpenAPI), so tools map to SDK methods rather than REST operationIds.
 server:
   name: picfinder
   transport: stdio
   auth: api-key over wss://ws-api.diffusionmaster.com
 tools:
 - name: request_images
-  description: Generate images from a text prompt (text-to-image) or a seed image (image-to-image), with optional model, LoRA, ControlNet, inpaint/outpaint, and step controls.
+  description: Generate images from a text prompt (text-to-image) or a seed image (image-to-image), with
+    optional model, LoRA, ControlNet, inpaint/outpaint, and step controls.
   source_operation: picfinder-sdk#requestImages
 - name: remove_image_background
   description: Remove the background from an input image.
@@ -30,3 +29,9 @@ tools:
 - name: get_similar_image
   description: Retrieve additional images similar to a previously generated task result.
   source_operation: picfinder-sdk#getSimililarImage
+deployment:
+  mode: none
+  verified: derived
+  tools: 6
+  checked: '2026-08-12'
+  source: catalog MCP census
