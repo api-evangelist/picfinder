@@ -51,8 +51,8 @@ modified: '2026-07-20'
 tags:
 - Company
 - Artificial Intelligence
-- Machine-Learning
-- Image-Generation
+- Machine Learning
+- Image Generation
 - Generative AI
 - Text-to-Image
 - Image to Image
@@ -70,6 +70,8 @@ tags_raw:
 - Developer Tools
 - SDK
 - WebSocket
+- Machine-Learning
+- Image-Generation
 image: https://picfinder.ai/favicon.ico
 apis:
 - name: PicFinder Image Inference API
