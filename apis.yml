@@ -54,7 +54,6 @@ tags:
 - Machine Learning
 - Image Generation
 - Generative AI
-- Text-to-Image
 - Image to Image
 - Developer Tools
 - SDK
@@ -72,6 +71,7 @@ tags_raw:
 - WebSocket
 - Machine-Learning
 - Image-Generation
+- Text-to-Image
 image: https://picfinder.ai/favicon.ico
 apis:
 - name: PicFinder Image Inference API
