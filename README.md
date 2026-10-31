@@ -64,6 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-PicFinder is a company surfaced as a portfolio company of a16z and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+PicFinder (PicFinder.ai) is an AI-powered image generation platform that turns text prompts into unlimited realistic, artistic, and abstract images in near real time. Beyond the consumer web app and Figma plugin, PicFinder exposes a developer API for programmatic image inference powered by the RunWare / DiffusionMaster inference platform. The API is delivered over a WebSocket connection and authenticated with an API key, and supports text-to-image and image-to-image generation, model and LoRA selection (including CivitAI models), ControlNet guidance, inpainting and outpainting, background removal, GAN upscaling, image-to-text interrogation, prompt enhancement, and similar-image retrieval. A first-party JavaScript / TypeScript SDK (picfinder-sdk) wraps the WebSocket protocol for both browser and Node.js environments. PicFinder was surfaced as an a16z portfolio company and profiled into the API Evangelist network.
 
-Backed by: a16z
+**Areas:** Company · Artificial Intelligence · Machine Learning · Image Generation · Generative AI · Image to Image · Developer Tools · SDK · WebSocket
+
+## PicFinder on APIs.io
+
+Everything profiled for PicFinder is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/picfinder/](https://apis.io/providers/picfinder/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [PicFinder Image Inference API](https://apis.io/apis/picfinder/picfinder-image-inference-api/) — WebSocket API for AI image inference powered by the RunWare / DiffusionMaster platform. Supports text-to-image and image-to-image generation, model / LoRA…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [picfinder](https://apis.io/servers/picfinder/picfinder/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Picfinder Authentication](https://apis.io/security/picfinder/picfinder-authentication/)
+- [Picfinder Domain Security](https://apis.io/security/picfinder/picfinder-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.picfinder.ai/)
+- [Documentation](https://picfinder.ai/support)
+- [API reference](https://www.npmjs.com/package/picfinder-sdk)
+- [Sign up](https://picfinder.ai/sign-up-account-details)
+- [Support](https://picfinder.ai/support)
+- [Terms of service](https://picfinder.ai/terms-and-conditions)
+- [Privacy policy](https://picfinder.ai/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 19.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 26.2 |
+| Access clarity | 34.2 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.2** — AI & Biometrics
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/picfinder/](https://apis.io/providers/picfinder/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for PicFinder: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/picfinder/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
